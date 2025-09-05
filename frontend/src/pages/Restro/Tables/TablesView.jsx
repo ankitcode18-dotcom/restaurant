@@ -29,7 +29,7 @@ export default function TableView() {
             return alert('User do not found')
         }
         try {
-            const res = await axios.post("http://localhost:5000/table/create-table", {
+            const res = await axios.post("https://restaurant-backend-7qbj.onrender.com/table/create-table", {
                 ...formData,
                 branchId: branch_Id
             })
