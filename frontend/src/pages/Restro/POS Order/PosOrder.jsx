@@ -20,7 +20,7 @@ export default function PosOrder() {
 
 
     useEffect(() => {
-        const socket = io("http://localhost:5000", {
+        const socket = io("https://restaurant-backend-7qbj.onrender.com", {
             transports: ["websocket"], // force websocket
         });
 
@@ -60,7 +60,7 @@ export default function PosOrder() {
 
     const handleStatusChange = async (id, newStatus) => {
         try {
-            const res = await axios.put(`http://localhost:5000/restaurant/updated_order/${id}`, { status: newStatus });
+            const res = await axios.put(`https://restaurant-backend-7qbj.onrender.com/restaurant/updated_order/${id}`, { status: newStatus });
             if (res?.data?.order) {
                 setorderhistroy((prev) =>
                     prev.map((o) => (o._id === id ? res.data.order : o))
