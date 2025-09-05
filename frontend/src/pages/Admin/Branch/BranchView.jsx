@@ -98,7 +98,7 @@ export default function BranchView() {
                         className="bg-white flex flex-col gap-2 rounded-lg shadow hover:shadow-lg transition duration-300"
                     >
                         <img
-                            src={"http://localhost:5000" + branchImg + "/" + branch.image}
+                            src={"https://restaurant-backend-7qbj.onrender.com" + branchImg + "/" + branch.image}
                             alt={branch.name}
                             className="w-full h-40 object-cover rounded-t-lg"
                         />
