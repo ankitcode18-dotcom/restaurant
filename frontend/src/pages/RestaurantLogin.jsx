@@ -22,7 +22,7 @@ export default function RestaurantLogin() {
             const credential = credentialResponse?.credential; // raw JWT
             if (!credential) throw new Error("No credential received");
 
-            const res = await axios.post("http://localhost:5000/restaurant/user",
+            const res = await axios.post("https://restaurant-backend-7qbj.onrender.com/restaurant/user",
                 { credential }, // ✅ raw JWT bhejo
                 { headers: { "Content-Type": "application/json" } }
             );
