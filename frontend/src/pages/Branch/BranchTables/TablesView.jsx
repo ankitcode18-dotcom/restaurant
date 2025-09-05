@@ -10,7 +10,7 @@ export default function TableView() {
     const [qrData, setQrData] = useState(null);
 
     const handleSubmit = async () => {
-        const { data } = await axios.post("http://localhost:5000/table/create-table", {
+        const { data } = await axios.post("https://restaurant-backend-7qbj.onrender.com/table/create-table", {
             name,
             size,
         });
