@@ -85,7 +85,7 @@ export default function MenuView() {
                         className="bg-white shadow-md rounded-lg overflow-hidden border"
                     >
                         <img
-                            src={`${"http://localhost:5000"}${menuImg}/${menu.image}`}
+                            src={`${"https://restaurant-backend-7qbj.onrender.com"}${menuImg}/${menu.image}`}
                             alt={menu.title}
                             className="w-full h-40 object-cover"
                         />
