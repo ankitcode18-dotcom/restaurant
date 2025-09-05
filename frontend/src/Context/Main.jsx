@@ -26,7 +26,7 @@ export default function Main(props) {
     const [table, setTables] = useState([]);
     const [orderhistroy, setorderhistroy] = useState([]);
 
-    const API_BASE_URL = 'http://localhost:5000';
+    const API_BASE_URL = 'https://restaurant-backend-7qbj.onrender.com';
     const Admin_Url = "/admin"
     const Menu_url = '/menu'
     const BRANCH = '/branch'
