@@ -16,7 +16,7 @@ export default function RestaurantOrderHistory() {
     }, []);
 
     useEffect(() => {
-        const socket = io("http://localhost:5000", {
+        const socket = io("https://restaurant-backend-7qbj.onrender.com", {
             transports: ["websocket"],
         });
 
